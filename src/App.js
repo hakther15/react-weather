@@ -1,5 +1,6 @@
 
 import './App.css';
+import Weather from "./Weather.js";
 
 function App() {
   return (
@@ -7,7 +8,7 @@ function App() {
       <header className="App-header">
         
         <p>
-         Hello world
+         <Weather />
         </p>
         
       </header>

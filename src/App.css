@@ -1,0 +1,14 @@
+div.container {
+  background: linear-gradient(
+    to top,
+    rgb(251, 194, 235) 0%,
+    rgb(166, 193, 238) 100%
+  );
+  padding: 0px 15px 7px 15px;
+  margin-top: 7px;
+  border-radius: 4px;
+}
+
+h1 {
+    color: blue;
+}
