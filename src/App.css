@@ -25,6 +25,11 @@ margin: 0px 5px;
   background: rgba(113, 219, 255, 0.747);
 }
 
+.bar:hover {
+  border: rgba(174, 0, 255, 0.555) 3px solid;
+  transition: 100ms ease-in-out;
+}
+
 input.button {
 font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Verdana, sans-serif;
@@ -35,3 +40,70 @@ font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
   border-radius: 4px;
 }
 
+.button:hover {
+  background: blue;
+  color: white;
+  transition: 100ms ease-in-out;
+}
+
+div.card-group {
+  border: rgb(161, 54, 255) 5px solid;
+}
+
+div.card {
+  background: rgba(201, 229, 255, 0.5);
+}
+
+div.card-body1 {
+  background: rgb(166, 193, 238);
+  color: white;
+  border: rgb(161, 54, 255) 5px solid;
+  padding: 5px;
+  margin: 0 auto;
+}
+
+img.card-img-top {
+  width: 100px;
+  display: block;
+  margin: 0 auto;
+}
+h3.card-title,
+p.card-text,
+p.card-text1,
+p.card-text2 {
+  text-align: center;
+  font-family: "Arima Madurai", cursive;
+  text-transform: capitalize;
+}
+
+a.f,
+a.c {
+  text-decoration: none;
+  cursor: default;
+}
+
+.f:hover {
+  text-decoration: underline;
+}
+.c:hover {
+  text-decoration: underline;
+}
+
+.mph {
+  text-transform: lowercase;
+}
+
+h1.card-title {
+  font-size: 35px;
+  font-family: "Arima Madurai", cursive;
+}
+p.card-text1 {
+  font-size: 25px;
+  font-weight: bolder;
+  color: rgb(161, 54, 255);
+}
+
+p.card-text2 {
+  font-size: 20px;
+  color: rgb(161, 54, 255);
+}
