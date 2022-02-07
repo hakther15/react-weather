@@ -45,7 +45,7 @@ export default function WeatherInfo(props) {
                 <br />
                 <strong>Humidity: </strong>
                 {props.data.humidity}
-                <span> % </span> <br />
+                <span>% </span> <br />
                 <strong>Winds: </strong>
                 <span></span>
                 {props.data.wind}
