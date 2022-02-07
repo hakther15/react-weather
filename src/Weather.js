@@ -5,8 +5,7 @@ import axios from "axios";
 
 
 export default function Weather(props) {
-  const [weatherData, setWeatherData] = useState({});
-  const [ready, setReady] = useState(false);
+  const [weatherData, setWeatherData] = useState({ ready: false });
   const [city, setCity] = useState(props.city);
   
     function handleResponse(response) {
@@ -24,7 +23,6 @@ export default function Weather(props) {
           icon: response.data.weather[0].icon,
           feelLike: Math.round(response.data.main.feels_like),
       });
-      setReady(true);
     }
 
     function handleSubmit(event) {
@@ -43,7 +41,7 @@ export default function Weather(props) {
   }
 
   
-    if (ready) {
+    if (weatherData.ready) {
         return (
           <div className="container">
             <form className="searchEngine" onSubmit={handleSubmit}>
