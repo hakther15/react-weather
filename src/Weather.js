@@ -3,6 +3,7 @@ import "./App.css";
 import WeatherInfo from "./WeatherInfo";
 import axios from "axios";
 
+
 export default function Weather(props) {
     const [weatherData, setWeatherData] = useState({ loaded: false });
     const [city, setCity] = useState(props.defaultCity);

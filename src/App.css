@@ -73,10 +73,12 @@ img.card-img-top {
   display: block;
   margin: 0 auto;
 }
-h3.card-title,
-p.card-text,
-p.card-text1,
-p.card-text2 {
+div.card-title,
+div.card-title1,
+div.card-title2,
+div.card-text,
+div.card-text1,
+div.card-text2 {
   text-align: center;
   font-family: "Arima Madurai", cursive;
   text-transform: capitalize;
@@ -86,6 +88,16 @@ a.f,
 a.c {
   text-decoration: none;
   cursor: default;
+}
+
+div.card-title1{
+  font-weight: 500;
+  font-size: 25px;
+}
+
+div.card-title2 {
+  font-weight: 500;
+  font-size: 40px;
 }
 
 .f:hover {
@@ -103,13 +115,13 @@ h1.card-title {
   font-size: 35px;
   font-family: "Arima Madurai", cursive;
 }
-p.card-text1 {
+div.card-text1 {
   font-size: 25px;
   font-weight: bolder;
   color: rgb(161, 54, 255);
 }
 
-p.card-text2 {
+div.card-text2 {
   font-size: 20px;
   color: rgb(161, 54, 255);
 }
@@ -119,5 +131,5 @@ p.card-text2 {
   display: block;
   text-align: center;
   font-size: 13px;
-  margin-top: -10px;
+  margin-top: 5px;
 }

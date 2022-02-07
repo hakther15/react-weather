@@ -19,25 +19,25 @@ export default function WeatherTemperature(props) {
 
     if (unit === "fahrenheit") {
         return (
-            <h3 className="card-title">
+            <div className="card-title1">
                 <span className="current">{props.fahrenheit}° </span>
                 <span>
-                    <a href="#" className="f" onClick={showFahrenheit}>
+                    <a href="/" className="f" onClick={showFahrenheit}>
                         F
                     </a> / <a href="#" className="c" onClick={showCelsius}>C</a>
                 </span>
-            </h3>
+            </div>
         );
     } else {
         return (
-          <h3 className="card-title">
+          <div className="card-title1">
             <span className="current"> {Math.round(celsius())}° </span>
             <span>
-                    <a href="#" className="f" onClick={showFahrenheit}>
+                    <a href="/" className="f" onClick={showFahrenheit}>
                         F
                     </a> / <a href="#" className="c" onClick={showCelsius}>C</a>
                 </span>
-          </h3>
+          </div>
         );
     }
 }

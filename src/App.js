@@ -7,9 +7,9 @@ function App() {
     <div className="App">
       <header className="App-header">
         
-        <p>
+        <div>
           <Weather defaultCity="Cleveland" />
-        </p>
+        </div>
         
       </header>
       <span className="github">
