@@ -16,7 +16,7 @@ div.container {
 
 input.bar {
 margin: 0px 5px;
-  padding: 0px 125px 0px 25px;
+  padding: 0px 13px 0px 25px;
   text-align: left;
   border: rgb(147, 58, 248) 2px solid;
   border-radius: 4px;
@@ -112,4 +112,12 @@ p.card-text1 {
 p.card-text2 {
   font-size: 20px;
   color: rgb(161, 54, 255);
+}
+
+.github {
+  margin: 0 auto;
+  display: block;
+  text-align: center;
+  font-size: 13px;
+  margin-top: -10px;
 }

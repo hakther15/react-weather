@@ -12,6 +12,11 @@ function App() {
         </p>
         
       </header>
+      <span className="github">
+        <a href="https://github.com/hakther15/weather-app-react" target="blank">
+          Open-source code
+        </a>{" "}
+        by Sina A </span>
     </div>
   );
 }
