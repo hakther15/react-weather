@@ -36,8 +36,8 @@ export default function WeatherInfo(props) {
                 </span>
               </h3>
               <p className="card-text">
-                H: <span> 19°F </span> / L:
-                <span> 13°F</span>
+                            H: <span> {props.data.hiTemp}°F </span> / L:
+                            <span> {props.data.loTemp}°F</span>
               </p>
               <p className="card-text">{props.data.description}</p>
             </div>
