@@ -5,11 +5,13 @@ import axios from "axios";
 
 
 export default function Weather(props) {
-    const [weatherData, setWeatherData] = useState({ loaded: false });
-    const [city, setCity] = useState(props.defaultCity);
+  const [weatherData, setWeatherData] = useState({});
+  const [ready, setReady] = useState(false);
+  const [city, setCity] = useState(props.city);
+  
     function handleResponse(response) {
-        setWeatherData({
-        loaded: true,
+      setWeatherData({
+          ready: true,
           temperature: Math.round(response.data.main.temp),
             wind: Math.round(response.data.wind.speed),
             hiTemp: Math.round(response.data.main.temp_max),
@@ -21,14 +23,8 @@ export default function Weather(props) {
             description: response.data.weather[0].description,
           icon: response.data.weather[0].icon,
           feelLike: Math.round(response.data.main.feels_like),
-        });
-
-    }
-
-    function search() {
-        const apiKey = "b4d94ed61b2db6baa9789149670b85e3";
-        let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=imperial`;
-        axios.get(apiUrl).then(handleResponse);
+      });
+      setReady(true);
     }
 
     function handleSubmit(event) {
@@ -40,11 +36,18 @@ export default function Weather(props) {
         setCity(event.target.value);
     }
 
-    if (weatherData.loaded) {
+  function search() {
+    const apiKey = "b4d94ed61b2db6baa9789149670b85e3";
+    let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=imperial`;
+    axios.get(apiUrl).then(handleResponse);
+  }
+
+  
+    if (ready) {
         return (
           <div className="container">
-            <form className="searchEngine" onSubmit={handleSubmit} onChange={handleCityChange} autoFocus="on">
-              <input type="Search" placeholder="Search city" className="bar" />
+            <form className="searchEngine" onSubmit={handleSubmit}>
+              <input type="search" placeholder="Search city" className="bar" onChange={handleCityChange} autoFocus="on"/>
               <input type="Submit" value="Search" className="button" />
             </form>
                 <WeatherInfo data={weatherData}/>
