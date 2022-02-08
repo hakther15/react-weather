@@ -84,10 +84,10 @@ div.card-text2 {
   text-transform: capitalize;
 }
 
-a.f,
-a.c {
+button.temp-change {
   text-decoration: none;
   cursor: default;
+  font-size: 20px;
 }
 
 div.card-title1{
@@ -100,10 +100,7 @@ div.card-title2 {
   font-size: 40px;
 }
 
-.f:hover {
-  text-decoration: underline;
-}
-.c:hover {
+button:hover {
   text-decoration: underline;
 }
 

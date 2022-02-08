@@ -45,11 +45,16 @@ export default function Weather(props) {
         return (
           <div className="container">
             <form className="searchEngine" onSubmit={handleSubmit}>
-              <input type="search" placeholder="Search city" className="bar" onChange={handleCityChange} autoFocus="on"/>
-              <input type="Submit" value="Search" className="button" />
+              <input
+                type="search"
+                placeholder="Search city"
+                className="bar"
+                onChange={handleCityChange}
+                autoFocus="on"
+              />
+              <input type="submit" value="Search" className="button" />
             </form>
-                <WeatherInfo data={weatherData}/>
-            
+            <WeatherInfo data={weatherData} />
           </div>
         );
     } else {
