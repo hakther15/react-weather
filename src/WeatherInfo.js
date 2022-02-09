@@ -10,7 +10,7 @@ export default function WeatherInfo(props) {
           <div className="card">
             <div className="card-body">
               <div className="card-title2">
-                <FormatDate date={props.data.date} />
+                <span className="last-updated">Last updated:</span> <FormatDate date={props.data.date} />
               </div>
               <br />
               <div className="card-text1">

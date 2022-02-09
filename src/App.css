@@ -130,3 +130,8 @@ div.card-text2 {
   font-size: 13px;
   margin-top: 5px;
 }
+
+span.last-updated {
+  display: block;
+  font-size: 15px;
+}
