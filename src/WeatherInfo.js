@@ -21,7 +21,7 @@ export default function WeatherInfo(props) {
           <div className="card">
             <div className="weather-pic">
               {" "}
-              <WeatherIcon code={props.data.icon} />{" "}
+              <WeatherIcon code={props.data.icon} size={150} />{" "}
             </div>
             <div className="card-body">
               <WeatherTemperature fahrenheit={props.data.temperature} />
