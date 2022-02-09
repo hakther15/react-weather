@@ -10,7 +10,6 @@ function App() {
         <div>
           <Weather city="Cleveland" />
         </div>
-        
       </header>
       <span className="github">
         <a href="https://github.com/hakther15/weather-app-react" target="blank">

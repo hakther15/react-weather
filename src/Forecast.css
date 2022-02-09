@@ -2,6 +2,13 @@
     text-align: center;
 }
 
+.week {
+  display: block;
+  padding: 0px 20px 0px 10px;
+  font-size: 40px;
+  font-family: "Playball", cursive;
+}
+
 div.weather-pic {
   display: block;
   margin: 0 auto;
