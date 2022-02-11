@@ -17,7 +17,8 @@ export default function Weather(props) {
             hiTemp: Math.round(response.data.main.temp_max),
             loTemp: Math.round(response.data.main.temp_min),
             date: new Date(response.data.dt * 1000),
-            city: response.data.name,
+        city: response.data.name,
+            coordinate: response.data.coord,
           country: response.data.sys.country,
           humidity: response.data.main.humidity,
             description: response.data.weather[0].description,
@@ -56,7 +57,7 @@ export default function Weather(props) {
               <input type="submit" value="Search" className="button" />
             </form>
             <WeatherInfo data={weatherData} />
-            <Forecast />
+            <Forecast coordinate={weatherData.coord}/>
           </div>
         );
     } else {
