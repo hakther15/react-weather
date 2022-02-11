@@ -14,7 +14,8 @@ export default function Forecast(props) {
 
   if (loaded) {
     return (
-      <div className="WeatherForecast">
+        <div className="WeatherForecast">
+            <div className="week">The week ahead</div>
         <div className="row">
           <div className="col">
             <ForecastDay data={forecast[0]} />
