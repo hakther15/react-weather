@@ -14,3 +14,19 @@ div.weather-pic {
   margin: 0 auto;
   margin-top: 15px;
 }
+
+.WeatherForecast-day,
+.col,
+.forecast-temperatures {
+  text-align: center;
+  font-family: "Arima Madurai", cursive;
+  text-transform: capitalize;
+}
+
+.temperature-max {
+  opacity: 0.9;
+}
+
+.temperature-min {
+  opacity: 0.6;
+}
